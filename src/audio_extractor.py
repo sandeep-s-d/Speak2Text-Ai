@@ -9,7 +9,7 @@ def extract_audio(video_path, output_audio="output.wav"):
     # 2. Build ffmpeg command
     command = [
     "ffmpeg",
-    "-y",                      # <--- ADD THIS
+    "-y",                      
     "-i", video_path,
     "-vn",
     "-acodec", "pcm_s16le",
